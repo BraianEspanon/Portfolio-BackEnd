@@ -3,6 +3,7 @@ package com.braianespanon.Portfolio.controller;
 import com.braianespanon.Portfolio.model.TarjetaPerfil;
 import com.braianespanon.Portfolio.service.IPerfilService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -18,6 +19,7 @@ public class PerfilController {
         return perfilServ.verPerfil();
     }
     
+    @CrossOrigin(origins = "https://portfolio-c4181.web.app/")
     @PutMapping("/tarjetaPerfil")
     public void editarPerfil(@RequestBody TarjetaPerfil perfil){
         perfilServ.editarPerfil(perfil);
