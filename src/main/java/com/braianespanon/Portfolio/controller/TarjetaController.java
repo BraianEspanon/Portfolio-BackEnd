@@ -4,6 +4,7 @@ import com.braianespanon.Portfolio.model.Tarjeta;
 import com.braianespanon.Portfolio.service.ITarjetaService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+@CrossOrigin(origins = "https://portfolio-c4181.web.app/")
 @RestController
 public class TarjetaController {
     @Autowired

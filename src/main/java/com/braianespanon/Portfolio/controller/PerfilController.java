@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+@CrossOrigin(origins = "https://portfolio-c4181.web.app/")
 @RestController
 public class PerfilController {
     @Autowired
@@ -19,7 +20,6 @@ public class PerfilController {
         return perfilServ.verPerfil();
     }
     
-    @CrossOrigin(origins = "https://portfolio-c4181.web.app/")
     @PutMapping("/tarjetaPerfil")
     public void editarPerfil(@RequestBody TarjetaPerfil perfil){
         perfilServ.editarPerfil(perfil);
