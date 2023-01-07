@@ -10,7 +10,6 @@ com\braianespanon\Portfolio\security\Controller\AuthController.class
 com\braianespanon\Portfolio\security\dto\NuevoUsuario.class
 com\braianespanon\Portfolio\security\jwt\JwtEntryPoint.class
 com\braianespanon\Portfolio\repository\TarjetaRepository.class
-.netbeans_automatic_build
 com\braianespanon\Portfolio\service\IPerfilService.class
 com\braianespanon\Portfolio\controller\MedioContactoController.class
 com\braianespanon\Portfolio\service\TarjetaService.class
