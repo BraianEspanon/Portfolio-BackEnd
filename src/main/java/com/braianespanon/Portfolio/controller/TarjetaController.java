@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @CrossOrigin(origins = "https://portfolio-c4181.web.app/")
-//@CrossOrigin(origins = "http://localhost:4200/")
 @RestController
 public class TarjetaController {
     @Autowired
@@ -28,8 +27,9 @@ public class TarjetaController {
     
     @PreAuthorize("hasRole('ADMIN')")
     @PostMapping("/tarjetasInformacion")
-    public void crearTarjeta(@RequestBody Tarjeta tarje){
+    public Tarjeta crearTarjeta(@RequestBody Tarjeta tarje){
         tarjetaServ.crearTarjeta(tarje);
+        return tarje;
     }
     
     @PreAuthorize("hasRole('ADMIN')")
