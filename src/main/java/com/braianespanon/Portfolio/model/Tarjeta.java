@@ -8,6 +8,7 @@ import lombok.Setter;
 
 @Getter @Setter
 @Entity
+@Table(name = "tarjeta")
 public class Tarjeta {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
