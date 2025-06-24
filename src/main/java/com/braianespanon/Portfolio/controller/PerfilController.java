@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-@CrossOrigin(origins = "https://portfolio-c4181.web.app/")
 @RestController
 public class PerfilController {
     @Autowired

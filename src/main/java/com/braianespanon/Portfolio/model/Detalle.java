@@ -1,9 +1,6 @@
 package com.braianespanon.Portfolio.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -12,8 +9,10 @@ import lombok.Setter;
 public class Detalle {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="id_detalle")
     private Long idDetalle;
     private String titulo;
+    @Column(name="url_img")
     private String urlImg;
     private String descripcion;
     private String periodo;

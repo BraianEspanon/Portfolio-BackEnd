@@ -1,12 +1,7 @@
 package com.braianespanon.Portfolio.model;
 
-import jakarta.persistence.CascadeType;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.*;
+
 import java.util.List;
 import lombok.Getter;
 import lombok.Setter;
@@ -16,11 +11,14 @@ import lombok.Setter;
 public class Tarjeta {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="id_tarjeta")
     private Long idTarjeta;
-    
-    private String titulo;
+
+    @Column(name="tipo")
     private String tipo;
-    
+
+    @Column(name="titulo")
+    private String titulo;
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "id_tarjeta")
     private List<Detalle> detalle;
