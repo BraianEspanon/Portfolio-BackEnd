@@ -13,7 +13,7 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**") // aplica a todas las rutas
-                        .allowedOrigins("http://localhost:4200") // origen del frontend
+                        .allowedOrigins("https://portfolio-c4181.web.app/") // origen del frontend
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
                         .allowCredentials(true);
