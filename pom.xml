@@ -106,6 +106,16 @@
             <artifactId>httpcore5-h2</artifactId>
             <version>5.3.4</version> <!-- misma versión que httpcore5 -->
         </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.7.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-jpa</artifactId>
+            <version>3.0.0</version>
+        </dependency>
     </dependencies>
 
     <build>
