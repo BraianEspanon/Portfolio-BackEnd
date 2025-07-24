@@ -36,3 +36,6 @@ build/
 ### enviroment ###
 serviceAccountKey.json
 .env
+
+### docker ###
+portfolio-app.tar

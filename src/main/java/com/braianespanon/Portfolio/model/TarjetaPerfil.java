@@ -20,6 +20,6 @@ public class TarjetaPerfil {
     private String nombre;
     @Column(name="url_img_perfil")
     private String urlImgPerfil;
-    @Column(name="url_img_portada")
-    private String urlImgPortada;
+    @Column(name="url_CV")
+    private String urlCV;
 }

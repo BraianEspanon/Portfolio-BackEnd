@@ -18,4 +18,5 @@ public class Detalle {
     private String periodo;
     private Long cantidad;
     private String enlace;
+    private Long prioridad;
 }

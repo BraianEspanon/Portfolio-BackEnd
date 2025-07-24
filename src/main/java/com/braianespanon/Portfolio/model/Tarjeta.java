@@ -20,7 +20,11 @@ public class Tarjeta {
 
     @Column(name="titulo")
     private String titulo;
-    @OneToMany(cascade = CascadeType.ALL)
+
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
     @JoinColumn(name = "id_tarjeta")
+    @OrderBy("prioridad ASC")
     private List<Detalle> detalle;
+
+    private Long prioridad;
 }
